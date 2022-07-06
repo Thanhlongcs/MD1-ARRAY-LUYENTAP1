@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  //cach 1: dung sort
+  let mang = [6,23,67,2,5,90,122,29];
+  //mang.sort(function (a,b){return b - a})
+  //document.write(mang);
+  //cach 2: dung for
+  for (let i = 0; i < mang.length; i++) {
+    for (let j = 0; j < mang.length ; j++) {
+      if(mang[i]<mang[j]){
+        let temp=mang[j]
+        mang[j]=mang[i]
+        mang[i]=temp;
+      }
+    }
+  }document.write(mang)
+
+</script>
+</body>
+</html>

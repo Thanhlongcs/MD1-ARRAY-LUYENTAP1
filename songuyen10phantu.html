@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a =[1,3,5,7,8,9,12,15,76,89]
+    let b=[]
+    count=0
+    total=0
+    for ( i = 0; i <a.length ; i++) {
+        if(a[i]>=10){
+            b.push(a[i])
+            count++
+        }
+    }
+    document.write(b.join(";")+"<br>")
+    document.write("so lon hon 10 la: "+ count)
+</script>
+</body>
+</html>
